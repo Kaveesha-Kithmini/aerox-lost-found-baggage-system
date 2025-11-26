@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+Backend/node_modules/
+Frontend/node_modules/
+*/node_modules/
+
+# Production builds
+build/
+dist/
+Frontend/dist/
+
+# Environment variables
+.env
+Backend/.env
+Frontend/.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Uploads folder (optional - you might want to keep sample images)
+Backend/uploads/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+
+# Package locks (optional)
+package-lock.json
+yarn.lock
+
+# Build outputs
+*.tsbuildinfo

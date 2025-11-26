@@ -1,0 +1,17 @@
+const twilio = require('twilio');
+require('dotenv').config();
+
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+const client = twilio(accountSid, authToken);
+
+async function sendWhatsapp(to, message) {
+  // WhatsApp numbers must be in the format: 'whatsapp:+1234567890'
+  return client.messages.create({
+    body: message,
+    from: `whatsapp:${process.env.TWILIO_PHONE_NUMBER}`,
+    to: `whatsapp:${to}`
+  });
+}
+
+module.exports = sendWhatsapp;
