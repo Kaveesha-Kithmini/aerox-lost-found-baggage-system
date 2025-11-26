@@ -434,24 +434,15 @@ Content-Type: application/json
 ### Backend `.env` File
 
 ```env
-# ============================================
-# Twilio Configuration (REQUIRED)
-# ============================================
-# Get these from: https://console.twilio.com/
-TWILIO_ACCOUNT_SID=ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-TWILIO_AUTH_TOKEN=your_auth_token_here
+# Twilio Configuration (Required for SMS/WhatsApp)
+TWILIO_ACCOUNT_SID=your_twilio_account_sid_here
+TWILIO_AUTH_TOKEN=your_twilio_auth_token_here
 TWILIO_PHONE_NUMBER=+1234567890
 
-# ============================================
-# MongoDB Configuration (OPTIONAL)
-# ============================================
-# Default connection is already configured
-# Only add this if you want to use your own database
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/database
+# MongoDB Configuration (Optional - already configured in code)
+MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/<database>
 
-# ============================================
-# Server Configuration (OPTIONAL)
-# ============================================
+# Server Configuration
 PORT=3001
 ```
 
