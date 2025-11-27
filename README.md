@@ -27,7 +27,7 @@ Seamlessly manage **lost luggage reports**, **found items**, and **automated mat
 It helps airports and passengers:
 - 📝 **Report lost luggage** with detailed descriptions
 - 🔍 **Register found items** by airport staff
-- 🔗 **Automatically match** lost and found items
+- 🔗 **Mannually match and update status** lost and found items
 - 📱 **Send notifications** via SMS and WhatsApp
 - 📊 **Track status** in real-time through admin dashboard
 - 📄 **Generate reports** and QR codes for easy identification
@@ -42,7 +42,6 @@ All accessible through a modern **React dashboard** and a robust **Express.js ba
 |:-------|:------------|
 | **Lost Luggage Reporter** | Allows passengers to submit detailed lost luggage reports with images and descriptions |
 | **Found Item Registrar** | Enables airport staff to register found luggage items with matching criteria |
-| **Intelligent Matcher** | Automatically matches lost and found items based on characteristics (color, size, brand, etc.) |
 | **Notification System** | Sends real-time SMS and WhatsApp notifications to passengers using Twilio |
 | **Admin Dashboard** | Provides comprehensive view of all reports with status tracking and management |
 | **QR Code System** | Generates and scans QR codes for quick luggage identification and tracking |
@@ -51,14 +50,12 @@ All accessible through a modern **React dashboard** and a robust **Express.js ba
 
 ## ✨ **Key Features**
 
-- 📝 AI-driven **Luggage Categorization & Matching**
 - 🔔 Smart **Real-time Notifications** (SMS & WhatsApp)
 - 📊 Comprehensive **Admin Dashboard** with analytics
 - 📱 **QR Code Generation** and scanning for quick tracking
 - 🖼️ **Image Upload Support** for luggage identification
 - 📄 **PDF Report Generation** for documentation
 - 🌍 **International Phone Support** with country codes
-- 🔒 Secure **Authentication System**
 - 📧 **Email Integration** for QR code delivery
 - 🎨 Beautiful **Shadcn UI** components
 - ⚡ **Fast Performance** with Vite
@@ -102,7 +99,6 @@ All accessible through a modern **React dashboard** and a robust **Express.js ba
 - 📝 **Lost Luggage Reporting** - Passengers can report lost luggage with detailed information
 - 🔍 **Found Luggage Registration** - Airport staff can register found luggage items
 - 🔄 **Real-time Status Tracking** - Track luggage status (Pending, Matched, Resolved)
-- 🔗 **Intelligent Matching System** - Automatically match lost and found items based on characteristics
 
 ### Advanced Features
 - 📱 **QR Code Generation & Scanning** - Generate QR codes for luggage tracking
